@@ -1,0 +1,136 @@
+/*-- FONTS --*/
+@import url(https://fonts.googleapis.com/css?family=Pacifico|Roboto);
+
+
+/*-- GENERAL --*/
+
+
+
+
+#gameStart {
+	padding: 5px 15px;
+	margin: 10px 0;
+	color: #FF3734;
+	background: transparent;
+	border: 1px solid #FFF;
+	transition: color 0.4s ease-in-out;
+	&:hover {
+		color: #FFF;
+	}
+}
+#nextQuestion {
+	padding: 15px 40px;
+	color: #FF3734;
+	background: transparent;
+	border: 1px solid #FFF;
+	transition: color 0.4s ease-in-out;
+	&:hover {
+		color: #FFF;
+	}
+}
+#goToResult {
+	padding: 15px 40px;
+	color: #FF3734;
+	background: transparent;
+	border: 1px solid #FFF;
+	transition: color 0.4s ease-in-out;
+	&:hover {
+		color: #FFF;
+	}
+}
+#checkAnswer {
+	padding: 15px 40px;
+	color: #FF3734;
+	background: transparent;
+	border: 1px solid #FFF;
+	transition: color 0.4s ease-in-out;
+	&:hover {
+		color: #FFF;
+	}
+}
+body {
+	background: url(../images/bg.jpg);
+	color: #FFF;
+	font-family: 'Roboto', sans-serif;
+}
+header {
+	padding: 50px;
+	background-color: rgba(0,0,0,0.5);
+	width: 50%;
+	margin: 10px auto;
+	border: 2px solid #FFF;
+	border-radius: 15px;
+
+	h1 {
+		font-family: 'Pacifico', cursive;
+	}
+}
+main {
+	padding: 50px;
+	text-align: center;
+	background-color: rgba(0,0,0,0.5);
+	width: 75%;
+	height: 75vh;
+	margin: 10px auto;
+	border: 2px solid #FFF;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	#question {
+		text-align: center;
+		font-size: 38px;
+		margin-bottom: 15px;	
+	}
+	#answers {
+		ul {
+			list-style: none;
+			padding-left: 0px;
+			li {
+				display: inline;
+				margin-right: 35px;
+				
+			}
+		}
+	}
+}
+
+
+
+.selected {
+	color: #c3252c !important;
+}
+
+.hidden {
+	display: none;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	header {
+		width: 100%;
+	}
+}
+
+// New Stuff
+
+li {
+  margin: 1em 0;
+}
+#answers input[type=radio] {
+ display: none;
+}
+
+input:checked + label {
+  font-weight: bold;
+  color: #c3252c;
+}
+
+label {  
+  font-size: 1.4rem;
+}
+
